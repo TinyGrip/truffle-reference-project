@@ -17,7 +17,7 @@ let mainnetProvider;
 
 // Make sure to login into Superblocks, and create a new deployment space in a project. You can find 
 // the deployment space id inside the space settings by clicking the gear icon next to the name
-const deploymentSpaceId = '5e5d24d32e0e980011a23a3f';
+const projectId = '5e5d24d32e0e980011a23a3f';
 
 // You need to create a new token in order to authenticate against the service. Login into the dashboard,
 // select the project you want to deploy into, and in the project settings you will find a Project Token 
@@ -44,7 +44,7 @@ module.exports = {
           // Let's not double create the provider (as we will create many deployments) as Truffle calls this function many times (◔_◔)
           if (!rinkebyProvider) {
             rinkebyProvider = new SuperHDWalletProvider({
-              deploymentSpaceId,
+              projectId,
               token,
               mnemonic,
               networkId: '4',
@@ -62,7 +62,7 @@ module.exports = {
           // Let's not double create the provider (as we will create many deployments) as Truffle calls this function many times (◔_◔)
           if (!rinkebyMetamaskProvider) {
             rinkebyMetamaskProvider = new ManualSignProvider({ 
-              deploymentSpaceId,
+              projectId,
               token,
               from: '0xEd578A16D54D359E4a2b8cbaf1388A8A8dD57569', 
               endpoint: 'https://rinkeby.infura.io/v3/14a9bebf5c374938b2476abe29ca5564',
@@ -81,7 +81,7 @@ module.exports = {
           // Let's not double create the provider (as we will create many deployments) as Truffle calls this function many times (◔_◔)
           if (!mainnetProvider) {
             mainnetProvider = new ManualSignProvider({ 
-              deploymentSpaceId,
+              projectId,
               token,
               from: '0xEd578A16D54D359E4a2b8cbaf1388A8A8dD57569', 
               endpoint: 'https://mainnet.infura.io/v3/14a9bebf5c374938b2476abe29ca5564',
