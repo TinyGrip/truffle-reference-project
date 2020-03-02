@@ -17,12 +17,12 @@ let mainnetProvider;
 
 // Make sure to login into Superblocks, and create a new deployment space in a project. You can find 
 // the deployment space id inside the space settings by clicking the gear icon next to the name
-const deploymentSpaceId = process.env.DEPLOYMENT_SPACE_ID;
+const deploymentSpaceId = '5e5d24d32e0e980011a23a3f';
 
 // You need to create a new token in order to authenticate against the service. Login into the dashboard,
 // select the project you want to deploy into, and in the project settings you will find a Project Token 
 // section. 
-const token = process.env.TOKEN;
+const token = '6m0ZeHnIZ3hZqPBF0/O5MxXMUlayX1jcFJp19hHI2v7QS1MB3++gPPSi';
 
 // Simply your 12 seeds word associated with your wallet. This is used only for the SuperHDWallet provider
 // so you can sign the txs client side, but still keep track fo the deployment within Superblocks.
