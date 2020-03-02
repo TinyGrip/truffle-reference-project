@@ -26,7 +26,7 @@ const token = '6m0ZeHnIZ3hZqPBF0/O5MxXMUlayX1jcFJp19hHI2v7QS1MB3++gPPSi';
 
 // Simply your 12 seeds word associated with your wallet. This is used only for the SuperHDWallet provider
 // so you can sign the txs client side, but still keep track fo the deployment within Superblocks.
-const mnemonic = process.env.MNEMONIC;
+const mnemonic = 'spider heart hospital wife donkey smile system seat buyer smile auction sense';
 
 module.exports = {
   plugins: ["truffle-security"],
