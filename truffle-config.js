@@ -64,7 +64,7 @@ module.exports = {
             rinkebyMetamaskProvider = new ManualSignProvider({ 
               deploymentSpaceId,
               token,
-              from: '0xEA6630F5bfA193f76cfc5F530648061b070e7DAd', 
+              from: '0xEd578A16D54D359E4a2b8cbaf1388A8A8dD57569', 
               endpoint: 'https://rinkeby.infura.io/v3/14a9bebf5c374938b2476abe29ca5564',
               networkId: '4',
             })
@@ -83,7 +83,7 @@ module.exports = {
             mainnetProvider = new ManualSignProvider({ 
               deploymentSpaceId,
               token,
-              from: '0xEA6630F5bfA193f76cfc5F530648061b070e7DAd', 
+              from: '0xEd578A16D54D359E4a2b8cbaf1388A8A8dD57569', 
               endpoint: 'https://mainnet.infura.io/v3/14a9bebf5c374938b2476abe29ca5564',
               networkId: '1',
             })
