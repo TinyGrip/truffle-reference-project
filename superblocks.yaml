@@ -25,7 +25,8 @@ jobs:
         name: ethereum/deploy
     script:
         - npm install
-        - DEVELOP=true npx truffle migrate --network rinkeby --reset
+        - npx truffle migrate --network rinkeby --reset
+        - npx super collect-artifacts
 
   # This job uses the ManualSignProvider to be able to securely and manually sign each transactions a given deployment is creating without ever
   # needing to share your private key with us.
@@ -35,7 +36,8 @@ jobs:
         name: ethereum/deploy
     script:
         - npm install
-        - DEVELOP=true npx truffle migrate --network rinkeby_metamask --reset
+        - npx truffle migrate --network rinkeby_metamask --reset
+        - npx super collect-artifacts
   
   deploy_to_mainnet:
     image: node:12

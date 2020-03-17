@@ -22,7 +22,7 @@ const projectId = '5e613830fd4ae20011e18996';
 // You need to create a new token in order to authenticate against the service. Login into the dashboard,
 // select the project you want to deploy into, and in the project settings you will find a Project Token 
 // section. 
-const token = 'VWr5tPbc1Xxto/PbnAI+P0sz0gGZQR1bIO4q6H1A6cUp/DJNS86YzQ9J';
+const token = 'CEwZecONCG/CBozO3lz8Vs1O3wKiy2XNL0FWnyOwACFgfeLF6vKCFkhm';
 
 // Simply your 12 seeds word associated with your wallet. This is used only for the SuperHDWallet provider
 // so you can sign the txs client side, but still keep track fo the deployment within Superblocks.
