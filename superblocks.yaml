@@ -26,7 +26,7 @@ jobs:
     script:
         - npm install
         - npx truffle migrate --network rinkeby --reset
-        - npx super collect-artifacts
+        - npx super collect-artifacts --package superblocks-cli
 
   # This job uses the ManualSignProvider to be able to securely and manually sign each transactions a given deployment is creating without ever
   # needing to share your private key with us.
@@ -37,7 +37,7 @@ jobs:
     script:
         - npm install
         - npx truffle migrate --network rinkeby_metamask --reset
-        - npx super collect-artifacts
+        - npx super collect-artifacts --package superblocks-cli
   
   deploy_to_mainnet:
     image: node:12
